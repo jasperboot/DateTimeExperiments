@@ -1,6 +1,6 @@
-﻿using DstExperiment.Extension;
-using DstExperiment.Extensions;
+﻿using DstExperiment.Extensions;
 using DstExperiment.TimezoneHandlers;
+using DstExperiment.TimezoneHandlers.Extensions;
 using MichaelBrumm.Win32;
 using System;
 using System.Globalization;

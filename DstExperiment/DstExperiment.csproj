@@ -46,7 +46,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DstTransitionSimulator.cs" />
-    <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="TimezoneHandlers\Extensions\DateTimeExtensions.cs" />
+    <Compile Include="TimezoneHandlers\Extensions\SimpleTimeZoneExtensions.cs" />
+    <Compile Include="TimezoneHandlers\Extensions\TimeZoneInfoExtensions.cs" />
     <Compile Include="TimezoneHandlers\ITimezoneHandler.cs" />
     <Compile Include="TimezoneHandlers\SimpleTimeZoneHandler.cs" />
     <Compile Include="TimezoneHandlers\TimeZoneInfoHandler.cs" />

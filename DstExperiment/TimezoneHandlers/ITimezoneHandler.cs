@@ -1,4 +1,4 @@
-﻿using DstExperiment.Extensions;
+﻿using DstExperiment.TimezoneHandlers.Extensions;
 using System;
 
 namespace DstExperiment.TimezoneHandlers

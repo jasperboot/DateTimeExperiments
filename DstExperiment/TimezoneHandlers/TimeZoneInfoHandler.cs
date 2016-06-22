@@ -1,4 +1,4 @@
-﻿using DstExperiment.Extensions;
+﻿using DstExperiment.TimezoneHandlers.Extensions;
 using System;
 
 namespace DstExperiment.TimezoneHandlers
@@ -26,7 +26,7 @@ namespace DstExperiment.TimezoneHandlers
 
         public DateTime ConvertFromLocalToMostProbableUtc(DateTime newLocalDateTime, DateTime oldUtcDateTime, TimeModificationAssumption timeModificationAssumption = TimeModificationAssumption.None)
         {
-            return newLocalDateTime.ToMostProbableUniversal(oldUtcDateTime, timeModificationAssumption, Timezone);
+            return TimeZoneInfoExtensions.ConvertTimeToMostProbableUtc(newLocalDateTime, Timezone, oldUtcDateTime, timeModificationAssumption);
         }
 
         public bool IsDaylightSavingTime(DateTime localDateTime)

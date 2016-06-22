@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Threading;
 
-namespace DstExperiment.Extension
+namespace DstExperiment.Extensions
 {
 
     public enum WeekOfMonth
