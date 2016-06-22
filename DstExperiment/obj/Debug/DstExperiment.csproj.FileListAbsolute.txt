@@ -1,8 +1,0 @@
-D:\Projects\DateTimeExperiments\DstExperiment\bin\Debug\DstExperiment.exe.config
-D:\Projects\DateTimeExperiments\DstExperiment\bin\Debug\DstExperiment.exe
-D:\Projects\DateTimeExperiments\DstExperiment\bin\Debug\DstExperiment.pdb
-D:\Projects\DateTimeExperiments\DstExperiment\bin\Debug\MichaelBrumm.Globalization.SimpleTimeZone.dll
-D:\Projects\DateTimeExperiments\DstExperiment\bin\Debug\MichaelBrumm.Win32.TimeZones.dll
-D:\Projects\DateTimeExperiments\DstExperiment\obj\Debug\DstExperiment.csprojResolveAssemblyReference.cache
-D:\Projects\DateTimeExperiments\DstExperiment\obj\Debug\DstExperiment.exe
-D:\Projects\DateTimeExperiments\DstExperiment\obj\Debug\DstExperiment.pdb
