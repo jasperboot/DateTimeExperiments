@@ -15,7 +15,7 @@ namespace DstExperiment.TimezoneHandlers.Extensions
             // Check whether the supplied DateTime objects are not of the wrong kind
             // Preferably one wouldn't use DateTimeKind.Unspecified either, but we mimic the BCL here
             if (newValueLocal.Kind == DateTimeKind.Utc)
-                throw new ArgumentException("Method can not be run on a DateTime object of kind DateTimeKind.Utc");
+                throw new ArgumentException("Argument can not be of kind DateTimeKind.Utc", nameof(newValueLocal));
             if (oldValueUTC.Kind == DateTimeKind.Local)
                 throw new ArgumentException("Argument can not be of kind DateTimeKind.Local", nameof(oldValueUTC));
 
@@ -32,8 +32,8 @@ namespace DstExperiment.TimezoneHandlers.Extensions
                 if (activeDstRule == null)
                     return timezone.ToUniversalTime(newValueLocal); // Or should we throw an Exception instead?
 
-                //  Convert the local DateTime to UCT according to what MichealBrumm.Globalization.SimpleTimeZone's naive implementation seems to do:
-                //  ( => Always assume the datetime was meant to  be fall in the first hour , i.e. Daylight Savings Time in this case)
+                //  Convert the local DateTime to UTC according to what MichealBrumm.Globalization.SimpleTimeZone's naive implementation seems to do:
+                //  ( => Always assume the datetime was meant to fall in the first hour, i.e. Daylight Savings Time in this case)
                 var naiveNewUTC = timezone.ToUniversalTime(newValueLocal);
 
                 // ASSUMPTION 1: If the new naive UTC value matches the old UTC value, we assume this is correct and the datetime (falling in the 1st hour) wasn't changed

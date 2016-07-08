@@ -22,7 +22,7 @@ namespace DstExperiment.TimezoneHandlers.Extensions
             // Check whether the supplied DateTime objects are not of the wrong kind
             // Preferably one wouldn't use DateTimeKind.Unspecified either, but we mimic the BCL here
             if (newValueLocal.Kind == DateTimeKind.Utc)
-                throw new ArgumentException("Method can not be run on a DateTime object of kind DateTimeKind.Utc");
+                throw new ArgumentException("Argument can not be of kind DateTimeKind.Utc", nameof(newValueLocal));
             if (oldValueUTC.Kind == DateTimeKind.Local)
                 throw new ArgumentException("Argument can not be of kind DateTimeKind.Local", nameof(oldValueUTC));
 
